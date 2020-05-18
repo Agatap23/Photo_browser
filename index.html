@@ -2,6 +2,8 @@
     <head>
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="container">
@@ -14,13 +16,24 @@
                     </header>
                     <form>
                         <input type="text" class="searchInput">
-                        <button class="searchBtn">Search</button>
+                        <button class="searchBtn"><i class="material-icons">search</i></button>
+                        <p class="errorMsg">Please enter what you're searching for!</p>
                     </form>
                 </div>
             </div>
             <div class="resultsWrapper">
                 <ul class="results">
                 </ul>
+                <div class="loadBar">
+                    <p>Load more</p>
+                    <i class="material-icons">expand_more</i>
+                </div>
+            </div>
+            <div class="displayPhoto overlay">
+                <i class="material-icons closeBtn">close</i>
+            </div>
+            <div class="overlayLoader overlay">
+                <i class="material-icons spinner">hourglass_full</i>
             </div>
         </div>
         <script src="script.js"></script>
