@@ -1,1 +1,5 @@
-/node_modules
+node_modules
+styles.css
+styles.css.map
+.DS_Store
+/assets/.DS_Store
